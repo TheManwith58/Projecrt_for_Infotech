@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Service Landing Page</title>
-    <link rel="stylesheet" href="indexFinal.css">
+    <title>Your Resume Deserves a Yes</title>
+    <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Inter:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -38,15 +38,22 @@
                 <a href="#" class="nav-link">Pricing</a>
                 <a href="#" class="nav-link">FAQ</a>
             </div>
-
             <!-- Call-to-action button in the navigation -->
             <button class="nav-button">Get a quote</button>
+
+            <!-- Hamburger Menu for Mobile -->
+            <div class="hamburger-menu" id="hamburger-menu">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 8H28" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M4 16H28" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M4 24H28" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero section: The main introductory content of the page -->
-    <div class="hero-section">
-        <!-- Decorative background circles for visual effect -->
+    <!-- Desktop Hero Section -->
+    <div class="hero-section-desktop">
         <div class="background-container">
             <div class="large-circle">
                 <svg width="634" height="634" viewBox="0 0 634 634" fill="none">
@@ -95,20 +102,20 @@
                 
                 <div class="button-group">
                     <button class="btn-outline">Resume Pakages</button>
-                    <button class="btn-primary">Contact us</button>
+                    <button class="btn-primary">Contact Us</button>
                 </div>
             </div>
 
             <!-- Image container for the hero section's visual element -->
             <div class="content-right">
-                <div class="woman-image">
+                <div class="woman-image-desktop">
                     <img src="2bd5ea2fc5e21d5ff6a5d0a2672bd5685c545932.png" alt="Young woman with backpack holding books and mobile phone" />
                 </div>
             </div>
         </div>
 
         <!-- Floating cards for social proof and stats -->
-        <div class="rating-card">
+        <div class="rating-card-desktop">
             <div class="rating-number">4.9</div>
             <div class="rating-details">
                 <div class="stars">
@@ -137,19 +144,90 @@
         </div>
     </div>
 
+    <!-- Mobile Hero Section -->
+    <section class="hero-section-mobile">
+        <div class="hero-text-content">
+            <h1 class="hero-title">
+                <span class="title-regular">Your Resume </span>
+                <span class="title-highlight">Deserves a yes</span>
+                <span class="title-regular"> let's </span>
+                <span class="title-large">make it happen</span>
+            </h1>
+            
+            <p class="hero-description-mobile">
+                If your resume isn't getting responses, it's time for an upgrade. Get an ATS-optimized resume crafted by HR experts to help you land more interviews. Our resumes are designed to get your foot in the door and place your name at the top of the shortlist.
+            </p>
+            
+            <div class="cta-buttons">
+                <button class="btn-outline">Resume Packages</button>
+                <button class="btn-primary">Contact us</button>
+            </div>
+        </div>
+        <div class="hero-illustration">
+            <div class="illustration-container">
+                <!-- Background circles -->
+                <div class="bg-circle-outer">
+                    <svg width="319" height="319" viewBox="0 0 319 319" fill="none">
+                        <ellipse cx="159.478" cy="159.479" rx="159.478" ry="159.479" fill="url(#paint0_radial_outer_mobile)" />
+                        <defs>
+                            <radialGradient id="paint0_radial_outer_mobile" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(159.478 142.691) rotate(90) scale(176.266 176.265)">
+                                <stop stop-color="#FFE4E9" />
+                                <stop offset="1" stop-color="#FFCBD4" />
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                </div>
+                
+                <div class="bg-circle-inner">
+                    <svg width="240" height="240" viewBox="0 0 240 240" fill="none">
+                        <ellipse cx="119.871" cy="119.871" rx="119.871" ry="119.871" fill="url(#paint0_radial_inner_mobile)" />
+                        <defs>
+                            <radialGradient id="paint0_radial_inner_mobile" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(120.133 119.609) rotate(90.1251) scale(120.134 120.133)">
+                                <stop stop-color="#FECDD5" />
+                                <stop offset="1" stop-color="#FFE2E7" />
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                </div>
+                
+                <!-- Woman illustration -->
+                <div class="woman-image-mobile">
+                    <img src="2bd5ea2fc5e21d5ff6a5d0a2672bd5685c545932.png" alt="Happy woman with backpack" />
+                </div>
+                
+                <!-- Stats card -->
+                <div class="stats-card">
+                    <div class="stats-icon">
+                        <div class="icon-bg"></div>
+                         <img src="b91cf97dd3c207e68c41257eaae75672ecfbc1a9.png" alt="Graduation Cap Icon">
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-number">260+</div>
+                        <div class="stats-label">Online Resume Created</div>
+                    </div>
+                </div>
+                
+                <!-- Rating card -->
+                <div class="rating-card-mobile">
+                    <div class="rating-score">4.9</div>
+                    <div class="rating-stars">
+                        <div class="stars">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                        </div>
+                        <div class="rating-label">Instructor Rating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- "What You Get" Services Section -->
     <div class="services-section-container">
         <div class="services-main-content">
             <!-- Section header with badge and subtitle -->
             <div class="services-header-section">
-                <div class="badge-container">
-                    <div class="badge">
-                        <div class="badge-text">What you Get</div>
-                    </div>
-                </div>
-                <div class="subtitle-container">
-                    <div class="subtitle">You're not just another applicant and your resume shouldn't look like one</div>
-                </div>
+                <div class="badge">What you Get</div>
+                <h2 class="subtitle">You're not just another applicant and your resume shouldn't look like one</h2>
             </div>
             
             <!-- Grid container for the service cards -->
@@ -160,7 +238,7 @@
                             <div class="service-illustration">
                                 <img src="CMS1.png" alt="Resume illustration" style="width: 100%; height: 100%; object-fit: contain;">
                             </div>
-                            <div class="service-title">A Resume That Passes ATS Filters</div>
+                            <h3 class="service-title">A Resume That Passes ATS Filters</h3>
                         </div>
                         <div class="service-description">Get a professionally written, keyword-optimized resume that lands in recruiter inboxes—not rejection piles.</div>
                     </div>
@@ -172,7 +250,7 @@
                             <div class="service-illustration">
                                 <img src="CMS2.png" alt="Cover Letter illustration" style="width: 100%; height: 100%; object-fit: contain;">
                             </div>
-                            <div class="service-title">A Cover Letter That Gets Read</div>
+                            <h3 class="service-title">A Cover Letter That Gets Read</h3>
                         </div>
                         <div class="service-description">Stand out with a cover letter that speaks directly to the role and reflects your strengths.</div>
                     </div>
@@ -184,7 +262,7 @@
                             <div class="service-illustration">
                                 <img src="CMS3.png" alt="LinkedIn illustration" style="width: 100%; height: 100%; object-fit: contain;">
                             </div>
-                            <div class="service-title">A LinkedIn Profile That Works For You</div>
+                            <h3 class="service-title">A LinkedIn Profile That Works For You</h3>
                         </div>
                         <div class="service-description">Attract the right eyes, start conversations, and show up in recruiter searches.</div>
                     </div>
@@ -196,7 +274,7 @@
                             <div class="service-illustration">
                                 <img src="CMS4.png" alt="Interview Confidence illustration" style="width: 100%; height: 100%; object-fit: contain;">
                             </div>
-                            <div class="service-title">Interview Confidence</div>
+                            <h3 class="service-title">Interview Confidence</h3>
                         </div>
                         <div class="service-description">Interview preparation with real HR professionals so you speak clearly, confidently, and convincingly.</div>
                     </div>
@@ -204,5 +282,92 @@
             </div>
         </div>
     </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="navbar-container" id="mobile-nav">
+        <div class="navbar-content">
+            <!-- Header -->
+            <div class="navbar-header">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <svg fill="none" preserveAspectRatio="none" viewBox="0 0 39 35">
+                            <g>
+                                <g>
+                                    <path d="M10.2167 24.8225C10.3425 25.2177 10.4954 25.6133 10.676 26.0052C10.8562 26.3974 11.0617 26.7876 11.2962 27.17C11.3549 27.2656 11.4159 27.3601 11.4789 27.4539C11.5373 27.5443 11.6169 27.6535 11.6844 27.7493L11.7675 27.8651L11.7883 27.894L11.7987 27.9085L11.8246 27.9409L11.8759 28.0068C11.9451 28.0944 12.0145 28.1824 12.0842 28.2706C12.653 28.965 13.316 29.6021 14.052 30.1508C14.4208 30.4231 14.8067 30.6759 15.2069 30.9049C15.2943 30.9538 15.3827 31.0013 15.4714 31.0481C15.8306 30.9362 16.1843 30.8162 16.5304 30.6865L17.0324 30.5L17.2913 30.3946C17.3816 30.3579 17.4598 30.326 17.5224 30.2976L17.6107 30.2588C17.75 30.1978 17.8816 30.1401 18.0139 30.077L18.03 30.0695C18.1901 29.9969 18.3548 29.9155 18.509 29.8382C19.1748 29.505 19.8027 29.1386 20.3757 28.7487C20.5134 28.6558 20.6499 28.5592 20.7853 28.4595C19.6957 28.3621 18.6446 28.1287 17.6764 27.7684C16.4162 27.3019 15.2959 26.6191 14.3987 25.7511C14.3435 25.6959 14.2885 25.6409 14.2336 25.586L14.1919 25.5452C14.1943 25.5489 14.1719 25.5227 14.1946 25.5509L14.1827 25.5379L14.1587 25.512L14.0632 25.4086C14.0156 25.355 13.9772 25.3185 13.9255 25.2567C13.8758 25.2007 13.8283 25.1426 13.7803 25.085C13.5882 24.8546 13.4108 24.6104 13.248 24.3575C12.9258 23.8498 12.6466 23.3152 12.4352 22.7672C11.9968 21.6749 11.783 20.5595 11.727 19.5555C11.6673 18.548 11.7762 17.6504 11.9444 16.9226C12.1132 16.1933 12.3438 15.6343 12.5191 15.2601C12.6068 15.0726 12.6817 14.9312 12.732 14.835C12.7838 14.7394 12.8105 14.6901 12.8105 14.6901L13.2865 13.8829L12.5586 14.4238C12.5586 14.4238 12.5136 14.4589 12.4263 14.5269C12.3389 14.5956 12.213 14.7026 12.0542 14.8531C11.7384 15.1538 11.297 15.644 10.8638 16.3926C10.431 17.1378 10.0246 18.1514 9.80898 19.3928C9.59393 20.6312 9.5776 22.0947 9.90197 23.6484C9.98377 24.0362 10.0894 24.428 10.2167 24.8225Z" fill="#FA1239"/>
+                                    <path d="M36.8433 11.6631C36.7216 11.0222 36.5767 10.4236 36.4212 9.86951C36.2716 9.33959 36.1129 8.85137 35.9516 8.40393L38.9609 9.10156L32.4441 0L33.2385 12.199L35.1618 8.69329C35.2665 9.13651 35.365 9.61559 35.4477 10.1307C35.5353 10.6705 35.6058 11.2479 35.6532 11.8566C35.7019 12.4651 35.727 13.1054 35.7154 13.7702C35.6964 15.0992 35.5261 16.5268 35.1589 17.9619C34.7881 19.3954 34.2082 20.8317 33.4015 22.159L33.2482 22.4068L33.0902 22.6524L32.9267 22.8978C32.8651 22.9934 32.8153 23.0581 32.7624 23.132L32.6839 23.2412L32.5981 23.3542C32.5394 23.4293 32.4841 23.5072 32.4228 23.5803L32.2418 23.8025L32.0541 24.0193C31.5445 24.5901 30.982 25.1202 30.3667 25.5904C29.8361 25.9987 29.2707 26.3675 28.6791 26.6939C28.1777 27.6014 27.6237 28.4287 27.0294 29.1534L26.9375 29.2637C26.8075 29.42 26.6731 29.5816 26.5142 29.753L26.2805 30.0096L25.8672 30.4276L25.4536 30.817L25.4375 30.8309C25.3827 30.8782 25.3282 30.9262 25.2738 30.9743C25.1513 31.0824 25.0247 31.1942 24.8872 31.3043C24.5859 31.5524 24.2758 31.789 23.9591 32.0145C23.9752 32.0105 23.9907 32.0071 24.0071 32.003L24.189 31.9587C24.2467 31.944 24.2923 31.9298 24.3445 31.9151L24.6765 31.8194C25.1097 31.6886 25.5401 31.5409 25.9676 31.3816C26.3952 31.223 26.8204 31.0537 27.24 30.8654C28.9154 30.1157 30.5422 29.165 31.9606 27.9146C32.6711 27.2948 33.3249 26.5997 33.9041 25.8487L34.1178 25.5644L34.3233 25.2742C34.3924 25.1783 34.4555 25.0773 34.5215 24.9793L34.6193 24.8302L34.7175 24.6722C34.7819 24.5678 34.852 24.4568 34.9002 24.3694C34.9571 24.2697 35.0138 24.1701 35.0705 24.0707C35.1803 23.8676 35.2865 23.6634 35.3878 23.4573C35.7903 22.6315 36.1228 21.7852 36.386 20.9375C36.648 20.0892 36.8386 19.2395 36.9702 18.4072C37.1031 17.5748 37.1708 16.7582 37.1903 15.9715C37.2106 15.1846 37.1836 14.4272 37.1207 13.7072C37.0595 12.9872 36.9618 12.3044 36.8433 11.6631Z" fill="#FA1239"/>
+                                </g>
+                                <path d="M29.4607 20.2605C29.4865 20.0588 29.4554 19.8576 29.4517 19.6567C29.4414 19.5267 29.4202 19.3967 29.41 19.267C29.3997 19.1372 29.3886 19.0076 29.3759 18.8783C29.3607 18.7498 29.3383 18.6231 29.3194 18.4956C29.2992 18.3684 29.2791 18.2414 29.259 18.1147C29.2405 17.9874 29.2051 17.8655 29.1785 17.7411C29.119 17.4943 29.0692 17.2445 28.9904 17.0069C28.8486 16.5253 28.6761 16.061 28.48 15.615C28.3758 15.3954 28.2755 15.1749 28.1667 14.9613C28.0486 14.7537 27.931 14.5472 27.8141 14.3417C27.3205 13.5383 26.7403 12.8273 26.1075 12.2209C25.4749 11.6147 24.79 11.1086 24.0749 10.733L23.9427 10.6605L23.9097 10.6426L23.8399 10.6034L23.8256 10.5972L23.7682 10.5724C23.6919 10.5394 23.6158 10.5065 23.54 10.4737C23.4643 10.4409 23.3889 10.4084 23.3139 10.3759L23.2565 10.3513L23.1837 10.3238L23.0385 10.2695C22.942 10.2343 22.846 10.1992 22.7505 10.1644C22.6561 10.1321 22.5579 10.0917 22.4681 10.0692C22.2895 10.0242 22.1126 9.9797 21.9375 9.93554C21.2356 9.78506 20.5589 9.70939 19.9213 9.73119C19.8419 9.73204 19.763 9.73281 19.6846 9.73358C19.6064 9.74033 19.5287 9.74701 19.4515 9.75362C19.2982 9.76797 19.147 9.78203 18.998 9.79595C18.7019 9.84454 18.4158 9.88301 18.1441 9.95467C17.053 10.2132 16.172 10.6508 15.5079 11.0883C15.4255 11.144 15.3452 11.1981 15.2672 11.2508C15.2286 11.2771 15.1906 11.3032 15.1531 11.3288C15.1172 11.3576 15.0817 11.3861 15.0468 11.4141C14.9094 11.5258 14.7806 11.6306 14.6608 11.728C14.4316 11.9383 14.2454 12.1232 14.0993 12.2762C13.8188 12.602 13.6814 12.7779 13.6814 12.7779L13.2498 13.3802L13.8929 13.0836C13.8929 13.0836 14.09 13.0023 14.4363 12.8456C14.5238 12.8081 14.6267 12.7764 14.7347 12.7349C14.8442 12.696 14.9591 12.6467 15.0887 12.6076C15.2174 12.5697 15.3558 12.5288 15.5033 12.4853C15.5398 12.4746 15.5768 12.4638 15.6143 12.4527C15.6528 12.4443 15.6918 12.4356 15.7314 12.4269C15.8098 12.4093 15.8904 12.3912 15.9733 12.3726C16.6342 12.2307 17.4391 12.1431 18.3312 12.1957C18.4421 12.1963 18.5555 12.2146 18.6694 12.2277C18.7832 12.2403 18.8982 12.2501 19.0141 12.2646C19.1292 12.2857 19.246 12.3071 19.3644 12.3288C19.4231 12.3395 19.4821 12.3503 19.5416 12.3611C19.6004 12.376 19.6595 12.391 19.719 12.4061C19.8377 12.436 19.9576 12.4629 20.0775 12.4946C20.1956 12.5335 20.3151 12.5728 20.436 12.6126C20.5571 12.6479 20.6752 12.6987 20.7948 12.746C20.8544 12.7696 20.9143 12.7932 20.9746 12.8171L21.0649 12.8524L21.1529 12.8962C21.2698 12.9534 21.3878 13.0113 21.5071 13.0697C21.6169 13.1305 21.7129 13.1915 21.8174 13.2495L21.8946 13.2929L21.9334 13.3144L21.9843 13.3475C22.0536 13.3929 22.1231 13.4385 22.193 13.4843C22.2628 13.5301 22.333 13.5761 22.4035 13.6224L22.4564 13.6572L22.4696 13.6659C22.3664 13.6082 22.4468 13.6546 22.4263 13.6439L22.4463 13.6604L22.5267 13.7262C22.9678 14.0522 23.3788 14.4622 23.7594 14.9199C24.1397 15.3788 24.4856 15.8948 24.787 16.4549C25.0862 17.0166 25.3376 17.6231 25.5308 18.258C25.5884 18.414 25.6221 18.5774 25.6664 18.7387C25.7137 18.8997 25.7439 19.0643 25.7782 19.2292C25.7945 19.3117 25.815 19.394 25.829 19.4772C25.8396 19.5607 25.8517 19.6441 25.8647 19.7278L25.9042 19.9795L25.9231 20.1976L25.9498 20.4171C25.9507 20.4273 25.9528 20.4333 25.9529 20.4469L25.9534 20.4876L25.9544 20.5692L25.9566 20.7325L25.9622 21.0597L25.963 21.1007L25.9635 21.1211C25.9701 20.981 25.9649 21.0917 25.9663 21.0647L25.9642 21.1302L25.9603 21.2616C25.9564 21.6131 25.9129 21.968 25.8661 22.327C25.7541 23.0429 25.5577 23.7679 25.2718 24.4691C25.1253 24.8179 24.9697 25.1674 24.7805 25.4992C24.6937 25.6702 24.5887 25.8295 24.4914 25.9946C24.4417 26.0765 24.3865 26.1544 24.3345 26.2348C24.2809 26.3139 24.2313 26.3965 24.1737 26.4726C24.0615 26.6262 23.9485 26.788 23.8393 26.9222L23.7569 27.0281L23.7158 27.0813L23.6951 27.1081L23.6687 27.1386L23.4584 27.3829L23.4058 27.4439L23.3795 27.4744L23.3664 27.4897C23.4012 27.4529 23.369 27.4871 23.3736 27.4822L23.276 27.5878L23.0808 27.7994C22.9442 27.9338 22.8135 28.075 22.6721 28.2046C22.1145 28.7315 21.5154 29.2166 20.8807 29.6454C20.2473 30.0762 19.5847 30.4585 18.9069 30.7978C18.7375 30.8826 18.5678 30.9663 18.396 31.0443C18.2239 31.1264 18.0564 31.1986 17.8887 31.2723C17.8077 31.309 17.7163 31.3462 17.6247 31.3833C17.5339 31.4204 17.4432 31.4573 17.3527 31.4943C17.181 31.558 17.0101 31.6215 16.8398 31.6848C15.4518 32.2048 14.0568 32.5547 12.7145 32.778C11.3713 33.0002 10.0792 33.0833 8.88441 33.0721C8.7349 33.0696 8.58699 33.0672 8.44068 33.0647C8.36739 33.0635 8.29456 33.0623 8.2221 33.0611C8.14984 33.057 8.07797 33.0528 8.00648 33.0487C7.72 33.0319 7.44011 33.0156 7.16726 32.9996C6.624 32.9398 6.10429 32.8971 5.62163 32.8119C4.65102 32.6713 3.81545 32.4649 3.12645 32.292C2.44622 32.1002 1.9123 31.938 1.54601 31.802C1.18042 31.6748 0.985465 31.6069 0.985465 31.6069L0 31.2495L0.859186 31.965C0.859186 31.965 1.04486 32.0592 1.39304 32.2358C1.73501 32.4195 2.26445 32.6545 2.94391 32.9437C3.1148 33.01 3.29491 33.0797 3.48372 33.1529C3.67304 33.2254 3.86998 33.307 4.08049 33.3721C4.29036 33.441 4.5088 33.5128 4.73538 33.5873C4.79215 33.6059 4.84943 33.6246 4.90723 33.6435C4.9656 33.6597 5.02448 33.676 5.08381 33.6926C5.20273 33.7255 5.32363 33.7592 5.44652 33.7933C5.93679 33.9404 6.46757 34.0492 7.02709 34.1783C7.30903 34.2288 7.59826 34.2806 7.89428 34.3336C7.96846 34.3466 8.04315 34.3597 8.11816 34.3728C8.19356 34.3823 8.2694 34.3918 8.34563 34.4015C8.49834 34.4206 8.65272 34.4401 8.80876 34.4597C10.058 34.6071 11.427 34.6683 12.877 34.5872C14.3266 34.5085 15.8551 34.2745 17.4096 33.8655C17.5067 33.8394 17.604 33.8133 17.7014 33.7872L17.8479 33.7477L17.9212 33.7279L17.9579 33.718C17.9686 33.7147 17.9599 33.7184 17.9866 33.7094L18.004 33.704C18.097 33.6756 18.1902 33.6472 18.2835 33.6187C18.3763 33.5907 18.4695 33.5624 18.5716 33.5275C18.7711 33.4612 18.9727 33.3949 19.1662 33.3234C19.3624 33.2549 19.5579 33.1797 19.7538 33.1029C20.5385 32.799 21.3181 32.425 22.0853 31.9897C22.8533 31.5564 23.6026 31.0442 24.316 30.4563C24.4961 30.3123 24.6677 30.1535 24.844 30.0014L25.1003 29.7604L25.2285 29.6395L25.3623 29.504L25.5876 29.2763L25.6157 29.2478L25.6474 29.2133L25.7108 29.1437L25.8375 29.004C26.0123 28.8159 26.1603 28.6327 26.3155 28.4474C26.9274 27.7013 27.466 26.876 27.9401 25.9982C28.1703 25.5545 28.3865 25.0991 28.5703 24.624C28.7635 24.1538 28.916 23.661 29.0556 23.1635C29.1811 22.6606 29.2912 22.1504 29.3543 21.6293L29.3797 21.4343L29.3924 21.3367L29.404 21.1782L29.4288 20.852L29.4416 20.6892L29.45 20.6079L29.4584 20.5673C29.4594 20.553 29.4714 20.5304 29.4701 20.513C29.4673 20.428 29.4641 20.3456 29.4607 20.2605Z" fill="#FA1239"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="logo-text-container">
+                        <div class="company-text">COMPANY</div>
+                        <div class="tagline-text">business tagline</div>
+                    </div>
+                </div>
+                <div class="close-button" id="close-nav-menu">
+                    <svg fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
+                        <path d="M16 17.8667L9.46667 24.4C9.22222 24.6444 8.91111 24.7667 8.53333 24.7667C8.15556 24.7667 7.84445 24.6444 7.6 24.4C7.35556 24.1556 7.23333 23.8444 7.23333 23.4667C7.23333 23.0889 7.35556 22.7778 7.6 22.5333L14.1333 16L7.6 9.46667C7.35556 9.22222 7.23333 8.91111 7.23333 8.53333C7.23333 8.15556 7.35556 7.84445 7.6 7.6C7.84445 7.35556 8.15556 7.23333 8.53333 7.23333C8.91111 7.23333 9.22222 7.35556 9.46667 7.6L16 14.1333L22.5333 7.6C22.7778 7.35556 23.0889 7.23333 23.4667 7.23333C23.8444 7.23333 24.1556 7.35556 24.4 7.6C24.6444 7.84445 24.7667 8.15556 24.7667 8.53333C24.7667 8.91111 24.6444 9.22222 24.4 9.46667L17.8667 16L24.4 22.5333C24.6444 22.7778 24.7667 23.0889 24.7667 23.4667C24.7667 23.8444 24.6444 24.1556 24.4 24.4C24.1556 24.6444 23.8444 24.7667 23.4667 24.7667C23.0889 24.7667 22.7778 24.6444 22.5333 24.4L16 17.8667Z" fill="#FA1239"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Menu -->
+            <div class="navbar-menu">
+                <div class="menu-content">
+                    <div class="menu-items">
+                        <div class="menu-item active">
+                            <div class="menu-icon"><svg fill="none" viewBox="0 0 24 24"><path d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z" fill="#FA1239"/></svg></div>
+                            <div class="menu-text">Home</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-icon"><svg fill="none" viewBox="0 0 24 24"><path d="M13 9H11V7H13M13 17H11V11H13M12 2C10.6868 2 9.38642 2.25866 8.17317 2.7612C6.95991 3.26375 5.85752 4.00035 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 14.6522 3.05357 17.1957 4.92893 19.0711C5.85752 19.9997 6.95991 20.7362 8.17317 21.2388C9.38642 21.7413 10.6868 22 12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2Z" fill="black"/></svg></div>
+                            <div class="menu-text">About Us</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-icon"><svg fill="none" viewBox="0 0 24 24"><path d="M12 2L13.09 8.26L20 9L13.09 15.74L12 22L10.91 15.74L4 9L10.91 8.26L12 2Z" fill="black"/></svg></div>
+                            <div class="menu-text">Our Services</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-icon"><svg fill="none" viewBox="0 0 24 24"><path d="M5.5 2L7.5 6H21L19 12H14L16 20H8L10 12H5L7 6H5V2H3.5V0H8V2H5.5ZM13 10H9V8H13V10Z" fill="black"/></svg></div>
+                            <div class="menu-text">Pricing</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-icon"><svg fill="none" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22S22 17.52 22 12S17.52 2 12 2ZM11 19H9V17H11V19ZM12 15.5C10.34 15.5 9 14.16 9 12.5S10.34 9.5 12 9.5S15 10.84 15 12.5S13.66 15.5 12 15.5Z" fill="black"/></svg></div>
+                            <div class="menu-text">FAQ</div>
+                        </div>
+                    </div>
+                    <div class="contact-button-container">
+                        <button class="contact-button">
+                            <div class="contact-button-text">Contact us</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburgerMenu = document.getElementById('hamburger-menu');
+            const mobileNav = document.getElementById('mobile-nav');
+            const closeNavMenu = document.getElementById('close-nav-menu');
+
+            hamburgerMenu.addEventListener('click', function () {
+                mobileNav.classList.add('open');
+            });
+
+            closeNavMenu.addEventListener('click', function () {
+                mobileNav.classList.remove('open');
+            });
+
+            // Close nav when clicking outside of it
+            mobileNav.addEventListener('click', function (e) {
+                if (e.target === mobileNav) {
+                    mobileNav.classList.remove('open');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
